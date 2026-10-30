@@ -1,0 +1,17 @@
+$kind: http-request
+url: http://127.0.0.1:8000/posts
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"title\": \"Top beaches in Ratnagiri\",\r
+
+    \    \"content\": \"Check out these awesome beaches!\",\r
+
+    \    \"published\": true,\r
+
+    \    \"rating\": 5\r
+
+    }"
+order: 2829941388220780

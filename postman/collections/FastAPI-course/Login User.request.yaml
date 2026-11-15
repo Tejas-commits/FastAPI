@@ -1,0 +1,18 @@
+$kind: http-request
+description: ""
+url: http://127.0.0.1:8000/login
+method: POST
+body:
+  type: formdata
+  content:
+    - type: text
+      key: username
+      value: steve@gmail.com
+      description: ""
+      disabled: false
+    - type: text
+      key: password
+      value: steve123
+      description: ""
+      disabled: false
+order: 4503587051014464

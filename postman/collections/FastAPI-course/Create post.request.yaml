@@ -1,17 +1,22 @@
 $kind: http-request
-url: http://127.0.0.1:8000/posts
+url: "{{URL}}posts"
 method: POST
+headers:
+  - key: Authorization
+    value: "{{bearer_token_0hiy}}"
+    disabled: true
+    description: ""
 body:
   type: json
   content: "{\r
 
-    \    \"title\": \"Top beaches in Ratnagiri\",\r
+    \    \"title\": \"This is my new post\",\r
 
-    \    \"content\": \"Check out these awesome beaches!\",\r
-
-    \    \"published\": true,\r
-
-    \    \"rating\": 5\r
+    \    \"content\": \"Check out these awesome beaches!\"\r
 
     }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{JWT}}"
 order: 2829941388220780

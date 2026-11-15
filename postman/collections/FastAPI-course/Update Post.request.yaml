@@ -1,16 +1,18 @@
 $kind: http-request
 description: ""
-url: http://127.0.0.1:8000/posts/2
+url: "{{URL}}posts/10"
 method: PUT
 body:
   type: json
   content: "{\r
 
-    \    \"title\": \"updated title\",\r
+    \    \"title\": \"My name is Tejas\",\r
 
-    \    \"content\": \"new content of post 2\",\r
-
-    \    \"rating\": 4\r
+    \    \"content\": \"This is another new content\"\r
 
     }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{JWT}}"
 order: 4440740944810568

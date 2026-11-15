@@ -1,5 +1,9 @@
 $kind: http-request
 description: ""
-url: http://127.0.0.1:8000/posts/85093
+url: "{{URL}}posts/6"
 method: DELETE
+auth:
+  type: bearer
+  credentials:
+    token: "{{JWT}}"
 order: 4359380377213545

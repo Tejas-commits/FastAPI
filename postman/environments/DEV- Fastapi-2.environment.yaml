@@ -1,0 +1,7 @@
+name: 'DEV: Fastapi'
+values:
+  - key: URL
+    value: ''
+  - key: JWT
+    value: ''
+color: 240

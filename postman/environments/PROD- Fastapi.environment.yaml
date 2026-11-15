@@ -1,0 +1,5 @@
+name: 'PROD: Fastapi'
+values:
+  - key: URL
+    value: ''
+color: 0

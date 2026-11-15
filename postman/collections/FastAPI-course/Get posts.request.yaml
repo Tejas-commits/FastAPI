@@ -1,4 +1,8 @@
 $kind: http-request
-url: http://127.0.0.1:8000/posts
+url: "{{URL}}posts"
 method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{JWT}}"
 order: 1790521835780
